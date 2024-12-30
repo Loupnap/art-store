@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - The Furry Officiel</title>
+    <link rel="stylesheet" href="styles/admin.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="root">
+        <header>
+            <div class="header-container">
+                <h1>The Furry Officiel</h1>
+                <nav class="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="/contact">Discord</a>
+                    <a href="profile.html">Profile</a>
+                    <a href="#" id="logoutLink" onclick="logout()">Logout</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="admin-dashboard">
+                <h2>Manage Home Page Content</h2>
+                <form id="contentForm">
+                    <label for="marquee-content">Marquee Content:</label>
+                    <textarea id="marquee-content" name="marquee-content" required></textarea>
+                    
+                    <label for="categories-content">Categories Content:</label>
+                    <textarea id="categories-content" name="categories-content" required></textarea>
+                    
+                    <label for="announcements-content">Announcements Content:</label>
+                    <textarea id="announcements-content" name="announcements-content" required></textarea>
+                    
+                    <label for="footer-content">Footer Content:</label>
+                    <textarea id="footer-content" name="footer-content" required></textarea>
+                    
+                    <button type="submit">Save Changes</button>
+                </form>
+                <p id="contentMessage"></p>
+                
+                <h2>Manage Users</h2>
+                <form id="userForm">
+                    <label for="new-username">New Username:</label>
+                    <input type="text" id="new-username" name="new-username" required>
+                    
+                    <label for="new-password">New Password:</label>
+                    <input type="password" id="new-password" name="new-password" required>
+                    
+                    <button type="submit">Add User</button>
+                </form>
+                <p id="userMessage"></p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2023 Furry Art Boutique</p>
+        </footer>
+    </div>
+    <script src="../src/auth.js"></script>
+    <script src="../src/admin-dashboard.js"></script>
+</body>
+</html>

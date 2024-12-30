@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - The Furry Officiel</title>
+    <link rel="stylesheet" href="styles/profile.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="root">
+        <header>
+            <div class="header-container">
+                <nav class="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <div class="logo-container">
+                        <img src="icon/apple-touch-icon.png" alt="The Furry Officiel Logo" class="logo">
+                    </div>
+                    <a href="/contact">Discord</a>
+                    <a href="profile.html" id="profileLink" style="display: none;">Profile</a>
+                    <a href="login.html" id="loginLink">Login</a>
+                    <a href="register.html" id="registerLink">Register</a>
+                    <a href="#" id="logoutLink" style="display: none;" onclick="logout()">Logout</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="profile-form">
+                <h2>Profile</h2>
+                <form id="profileForm">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                    
+                    <button type="submit">Update Profile</button>
+                </form>
+                <p id="profileMessage"></p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2023 Furry Art Boutique</p>
+        </footer>
+    </div>
+    <script src="../src/auth.js"></script>
+    <script src="../src/profile.js"></script>
+</body>
+</html>

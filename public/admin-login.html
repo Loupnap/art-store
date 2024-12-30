@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - The Furry Officiel</title>
+    <link rel="stylesheet" href="styles/admin.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="root">
+        <header>
+            <div class="header-container">
+                <h1>The Furry Officiel</h1>
+                <nav class="navbar">
+                    <a href="/">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="/contact">Discord</a>
+                    <a href="login.html">Login</a>
+                    <a href="register.html">Register</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="admin-login-form">
+                <h2>Admin Login</h2>
+                <form id="adminLoginForm">
+                    <label for="admin-username">Username:</label>
+                    <input type="text" id="admin-username" name="admin-username" required>
+                    
+                    <label for="admin-password">Password:</label>
+                    <input type="password" id="admin-password" name="admin-password" required>
+                    
+                    <button type="submit">Login</button>
+                </form>
+                <p id="adminLoginMessage"></p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2023 Furry Art Boutique</p>
+        </footer>
+    </div>
+    <script src="../src/admin-login.js"></script>
+</body>
+</html>

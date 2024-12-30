@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - The Furry Officiel</title>
+    <link rel="stylesheet" href="styles/register.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="root">
+        <header>
+            <div class="header-container">
+                <nav class="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <div class="logo-container">
+                        <img src="icon/apple-touch-icon.png" alt="The Furry Officiel Logo" class="logo">
+                    </div>
+                    <a href="/contact">Discord</a>
+                    <a href="profile.html" id="profileLink" style="display: none;">Profile</a>
+                    <a href="login.html" id="loginLink">Login</a>
+                    <a href="register.html" id="registerLink">Register</a>
+                    <a href="#" id="logoutLink" style="display: none;" onclick="logout()">Logout</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="register-form">
+                <h2>Register</h2>
+                <form id="registerForm">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    
+                    <button type="submit">Register</button>
+                </form>
+                <p id="registerMessage"></p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2023 Furry Art Boutique</p>
+        </footer>
+    </div>
+    <script src="../src/register.js"></script>
+</body>
+</html>

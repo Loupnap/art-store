@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - The Furry Officiel</title>
+    <link rel="stylesheet" href="styles/search.css">
+</head>
+<body>
+    <div id="root">
+        <header>
+            <h1>Furry Art Boutique</h1>
+            <div class="header-container">
+                <nav class="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <div class="logo-container">
+                        <img src="icon/apple-touch-icon.png" alt="The Furry Officiel Logo" class="logo">
+                    </div>
+                    <a href="/contact">Discord</a>
+                    <a href="profile.html" id="profileLink" style="display: none;">Profile</a>
+                    <a href="login.html" id="loginLink">Login</a>
+                    <a href="register.html" id="registerLink">Register</a>
+                    <a href="#" id="logoutLink" style="display: none;" onclick="logout()">Logout</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <h2>Search Results</h2>
+            <div class="product-list" id="search-results"></div>
+        </main>
+        <footer>
+            <p>&copy; 2023 Furry Art Boutique</p>
+        </footer>
+    </div>
+    <script src="../src/search.js"></script>
+</body>
+</html>

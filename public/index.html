@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Furry Officiel</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="root">
+        <header>
+            <div class="header-container">
+                <nav class="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <div class="logo-container">
+                        <img src="icon/apple-touch-icon.png" alt="The Furry Officiel Logo" class="logo">
+                    </div>
+                    <a href="/contact">Discord</a>
+                    <a href="login.html" id="loginLink">Login</a>
+                    <a href="register.html" id="registerLink">Register</a>
+                    <a href="admin-login.html" id="adminLoginLink">Admin</a>
+                    <a href="admin-dashboard.html" id="adminDashboardLink" style="display: none;">Admin Dashboard</a>
+                    <a href="#" id="logoutLink" style="display: none;" onclick="logout()">Logout</a>
+                </nav>
+            </div>
+        </header>
+        <div class="marquee">
+            <div class="marquee-inner" contenteditable="true">
+                <span>The Furry Officiel</span>
+                <span>The Furry Officiel</span>
+                <span>The Furry Officiel</span>
+                <span>The Furry Officiel</span>
+            </div>
+        </div>
+        <main>
+            <aside class="sidebar">
+                <h2 contenteditable="true">Categories</h2>
+                <ul>
+                    <li><a href="/category/art" contenteditable="true">Art</a></li>
+                    <li><a href="/category/commissions" contenteditable="true">Commissions</a></li>
+                    <li><a href="/category/adoptables" contenteditable="true">Adoptables</a></li>
+                </ul>
+            </aside>
+            <section class="content">
+                <h2 contenteditable="true">Announcements</h2>
+                <div class="announcements" contenteditable="true">
+                    <div class="announcement">
+                        <h3 contenteditable="true">Announcement sur tout la Boutique</h3>
+                        <p contenteditable="true">La Boutique et les arts sont fermée pour modification sur le site une annonce sera fait sur le serveur discord Bonne Journée ou soirée</p>
+                    </div>
+                    <!-- Add more announcements here -->
+                </div>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="image/Boutique/Holiday-Apparel-Banner_11bac6ee-47f9-42f9-94b7-91eebfd09873.jpg" alt="New Product 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/Boutique/MonsterDogDay-Banner.jpg" alt="New Product 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/Boutique/PJ-highres_a824b69d-efae-4afe-b514-8670309ba12f.jpg" alt="New Product 3">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#" role="button" onclick="prevSlide()">&#10094;</a>
+                    <a class="carousel-control-next" href="#" role="button" onclick="nextSlide()">&#10095;</a>
+                </div>
+            </section>
+            <section class="testimonials">
+                <h2>Testimonials</h2>
+                <div class="testimonial">
+                    <p>"Great service and amazing products!" - Jane Doe</p>
+                </div>
+                <div class="testimonial">
+                    <p>"I love the quality of the artwork!" - John Smith</p>
+                </div>
+                <!-- Add more testimonials here -->
+            </section>
+            <section class="contact">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p contenteditable="true">&copy; 2023 Furry Art Boutique</p>
+        </footer>
+    </div>
+    <script src="../src/auth.js"></script>
+    <script src="../src/index-edit.js"></script>
+    <script src="../src/carousel.js"></script>
+</body>
+</html>
